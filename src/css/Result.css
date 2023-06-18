@@ -1,0 +1,43 @@
+#main-result{
+    align-items: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    height: inherit;
+    justify-content: center;
+}
+
+#main-result h2{
+    font-size: 48px;
+}
+
+#main-result button{
+    background: transparent;
+    border: 2px solid #888;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 32px;
+    height: 96px;
+    width: 240px;
+}
+
+@media (max-width: 700px) {
+    #main-result h2{
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 500px) {
+    #main-result h2{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 350px) {
+    #main-result h2{
+        font-size: 18px;
+    }
+}
+

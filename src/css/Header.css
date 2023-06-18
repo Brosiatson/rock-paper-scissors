@@ -1,0 +1,52 @@
+header{
+    border: 2px solid #888;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 208px;
+    padding: 24px;
+    width: 56%;
+}
+
+.div-title{
+    display: flex;
+    flex-direction: column;
+}
+
+header h2{
+    color: #fff;
+    font-size: 36px;
+    margin-block: 0;
+}
+
+.div-score{
+    align-items: center;
+    background-color: #fff;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    min-width: 120px;
+    padding: 12px;
+    width: 20%;
+}
+
+.div-score h2{
+    color: #204388;
+    font-size: 24px;
+}
+
+.div-score span{
+    color: #000;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+@media (orientation: portrait) {
+    header{
+        align-items: center;
+        flex-direction: column;
+        gap: 24px;
+    }
+}

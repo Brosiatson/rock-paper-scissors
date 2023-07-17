@@ -1,0 +1,41 @@
+@use "../../../scss/Variables" as *;
+
+.header{
+    border: 2px solid $grey;
+    border-radius: clamp(8px, 2.4vw, 48px);
+    display: flex;
+    justify-content: space-between;
+    padding: clamp(8px, 2.4vw, 48px);
+    width: clamp(240px, 64%, 1800px);
+
+    &__title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &--text{
+            font-size: clamp(16px, 2.4vw , 96px);
+        }
+    }
+
+    &__score{
+        @extend %center;
+        background-color: $white;
+        border-radius: clamp(8px, 2.4vw, 48px);
+        flex-direction: column;
+        height: auto;
+        padding: clamp(4px, 1.6vw, 24px);
+        width: clamp(80px, 20%, 20%);
+        
+        &--text{
+            color: $blue;
+            font-size: clamp(16px, 2vw, 72px);
+        }
+
+        &--number{
+            color: $black;
+            font-size: clamp(32px, 3.6vw, 96px);
+            font-weight: 600;
+        }
+    }
+}

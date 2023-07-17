@@ -1,0 +1,36 @@
+@use "../components/Layouts/HomepageLayout/HomepageLayout";
+@use "../components/Layouts/ResultsLayout/ResultsLayout";
+
+@use "../components/Other/Header/Header";
+@use "../components/Other/PickDisplay/PickDisplay";
+
+@use "./Variables" as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Barlow';
+  margin: 0;
+  padding: 0;
+}
+
+body, #root{
+  background: radial-gradient(#204388, #0e2042);
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+#root{
+  @extend %center;
+  flex-direction: column;
+  gap: clamp(48px, 4vw, 120px);
+  padding: clamp(16px, 2vw, 96px);
+}
+
+main{
+  @extend %center;
+  height: 100%;
+}

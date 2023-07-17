@@ -1,0 +1,47 @@
+@use "../../../scss/Variables" as *;
+
+.homepage{
+    @extend %center;
+    flex-direction: column;
+    gap: clamp(48px, 4vw, 96px);
+
+    &__info{
+        font-size: clamp(20px, 3.2vw, 72px)
+    }
+
+    &__buttons{
+        @extend %center;
+        animation: buttons-homepage 1s ease-out;
+        gap: clamp(16px, 2.4vw, 72px);
+
+        &--element{
+            @extend %button-default;
+            background-color: transparent;
+            transition: .5s ease-in-out;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }    
+}
+
+@media (orientation: portrait) {
+    .homepage{
+
+        &__buttons{
+            flex-direction: column;
+        }
+    }
+}
+
+@keyframes buttons-homepage {
+    from{
+        filter: opacity(0);
+        transform: scale(0);
+    }
+    to{
+        filter: opacity(1);
+        transform: scale(1);
+    }
+}

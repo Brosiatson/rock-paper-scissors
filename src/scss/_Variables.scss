@@ -1,0 +1,20 @@
+$rock-color: #d82626;
+$paper-color: #d4d427;
+$scissors-color: #2222d8;
+$grey: #888;
+$white: #fff;
+$blue: #204388;
+$black: #000;
+$bg-color: radial-gradient(#204388, #0e2042);
+
+%button-default{
+    background-color: none;
+    border: none;
+    cursor: pointer;
+}
+
+%center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

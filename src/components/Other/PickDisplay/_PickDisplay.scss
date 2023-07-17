@@ -1,0 +1,45 @@
+@use "../../../scss/Variables" as *;
+
+.pick-display{
+    @extend %center;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 0 $grey;
+    height: clamp(160px, 16vw, 600px);
+    width: clamp(160px, 16vw, 600px);
+
+    &__rock{
+        background-color: $rock-color;
+    }
+
+    &__paper{
+        background-color: $paper-color;
+    }
+
+    &__scissors{
+        background-color: $scissors-color;
+    }
+
+    &__img{
+        @extend %center;
+        background-color: $white;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 50%;
+        border-radius: 50%;
+        box-shadow: inset 0 0 20px 0 $black;
+        height: 80%;
+        width: 80%;
+
+        &--rock{
+            background-image: url("../../../img/rock.png");
+        }
+
+        &--paper{
+            background-image: url("../../../img/paper.png");
+        }
+
+        &--scissors{
+            background-image: url("../../../img/scissors.png");
+        }
+    }
+}
